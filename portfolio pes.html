@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushi Jaiswal | Portfolio</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+    .container {
+      width: 85%;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    header {
+      background: linear-gradient(135deg, #f39c12, #f1c40f);
+      color: #0d0d0d;
+      padding: 4rem 0;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.4rem;
+    }
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.7rem;
+      background-color: #0d0d0d;
+      color: #f39c12;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #f39c12;
+      color: #0d0d0d;
+    }
+    section {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid #333;
+    }
+    h2 {
+      font-size: 2.4rem;
+      color: #f39c12;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #f39c12;
+      padding-left: 1rem;
+    }
+    h3 {
+      color: #ffffff;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight-box {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .testimonials, .hobbies {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .testimonial-item {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-left: 3px solid #f39c12;
+    }
+    .hobbies ul {
+      list-style: square;
+    }
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 2rem;
+    }
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Khushi Jaiswal</h1>
+      <p>Cloud Enthusiast & Full Stack Developer</p>
+      <a href="Khushi_Jaiswal_Resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hey! I'm Khushi, a passionate full-stack developer and cloud enthusiast with experience in building real-time systems and scalable web applications. I love combining tech with social impact and making complex things simple.</p>
+      <div class="highlight-box">
+        <p><strong>Fun Fact:</strong> I'm a persuasive speaker and sapiosexual — I’m most attracted to intelligence and deep conversations!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Elevator System (LLD)</h3>
+        <p><strong>Tech Stack:</strong> Java</p>
+        <ul>
+          <li>Designed a real-time elevator dispatch system processing 500+ user requests/hour.</li>
+          <li>Reduced congestion and energy use by 30% using intelligent state machines.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>MERN Stack E-Commerce Platform</h3>
+        <p><strong>Tech Stack:</strong> React, Node, MongoDB, Express</p>
+        <ul>
+          <li>Built and deployed a full-stack app with Stripe integration and secure auth.</li>
+          <li>Handled 1,000+ daily users with 35% faster queries and 99.9% uptime.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>AI-Powered Compliance Risk Assessment</h3>
+        <p><strong>Tech Stack:</strong> Python, NLP (OpenAI), AWS SDK, Terraform</p>
+        <ul>
+          <li>Designed an AI system to monitor and predict compliance risks in cloud deployments.</li>
+          <li>Used NLP to interpret regulatory texts and machine learning for scoring risk levels in real-time.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p><strong>Languages:</strong> Java, C++, SQL, HTML, CSS</p>
+      <p><strong>Frameworks:</strong> React.js, Next.js, Node.js, Express.js, Prisma</p>
+      <p><strong>Tools:</strong> AWS, Azure, DigitalOcean, GitHub, Docker, Terraform</p>
+      <p><strong>Soft Skills:</strong> Persuasive Communication, Emotional Intelligence, Teamwork, Adaptability, Public Speaking</p>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <div class="container">
+      <h2>Certifications & Achievements</h2>
+      <ul>
+        <li>NPTEL Programming in Java (Apr'24)</li>
+        <li>NPTEL Modern C++ & Cloud Computing (Oct'23)</li>
+        <li>NPTEL Operating Systems, Python (Sep & Feb'23)</li>
+        <li>NPTEL Discipline Star (Dec'24)</li>
+        <li>Worked with Hriday Sparsh NGO – Educated 50+ underprivileged individuals (Jun–Jul'23)</li>
+        <li>AIR 1284 in UIEO by Unified Council (Nov'16)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-item">“Khushi is an incredibly driven developer who combines technical skill with heartfelt impact. Her work at Hriday Sparsh was truly inspiring.” – NGO Coordinator</div>
+      <div class="testimonial-item">“In our internship, Khushi consistently brought innovative thinking and clarity to every task. She’s a natural leader.” – Peer Intern</div>
+    </div>
+  </section>
+
+  <section class="hobbies">
+    <div class="container">
+      <h2>What I Love</h2>
+      <ul>
+        <li>🌸 Cooking fusion recipes and experimenting in the kitchen</li>
+        <li>📸 Photography & aesthetic journaling</li>
+        <li>🧠 Learning cloud tech & AI trends</li>
+        <li>🧘‍♀️ Practicing mindfulness & self-care</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have a question, opportunity, or just want to say hi? Let’s connect!</p>
+      <ul>
+        <li>Email: khushijaiswal343@gmail.com</li>
+        <li>GitHub: <a href="https://github.com/khushi-jaiswal0512">khushi-jaiswal0512</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/khushijaiswal-/">khushijaiswal-</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Khushi Jaiswal. Built with love 💛</p>
+    </div>
+  </footer>
+</body>
+</html>
