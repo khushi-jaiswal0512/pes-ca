@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khushi Jaiswal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
     * {
       scroll-behavior: smooth;
@@ -11,80 +12,110 @@
     }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #0d0d0d;
       color: #f0f0f0;
+      background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
     }
     .container {
-      width: 85%;
+      width: 90%;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 2rem 0;
+      padding: 3rem 0;
     }
     header {
-      background: linear-gradient(135deg, #f39c12, #f1c40f);
+      background: linear-gradient(135deg, #f39c12, #e67e22);
       color: #0d0d0d;
-      padding: 4rem 0;
+      padding: 6rem 0;
       text-align: center;
       animation: fadeIn 2s ease-in-out;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     header h1 {
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 4.5rem;
+      margin-bottom: 0.8rem;
     }
     header p {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
+      opacity: 0.9;
     }
     .btn {
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.7rem;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
       background-color: #0d0d0d;
       color: #f39c12;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
+      border-radius: 15px;
+      font-weight: 600;
+      font-size: 1.3rem;
       display: inline-block;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     .btn:hover {
       background-color: #f39c12;
       color: #0d0d0d;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     section {
-      padding: 2.5rem 0;
+      padding: 4rem 0;
       border-bottom: 1px solid #333;
+      transition: background-color 0.3s;
+    }
+    section:hover {
+      background-color: rgba(26, 26, 26, 0.2);
     }
     h2 {
-      font-size: 2.4rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
       color: #f39c12;
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #f39c12;
-      padding-left: 1rem;
-    }
-    h3 {
-      color: #ffffff;
-    }
-    ul {
+      margin-bottom: 2rem;
+      border-left: 6px solid #f39c12;
       padding-left: 1.5rem;
     }
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p, li {
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 2rem;
+    }
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     .highlight-box {
       background-color: #1a1a1a;
-      padding: 1rem;
-      border-radius: 10px;
-      margin-top: 1rem;
+      padding: 2rem;
+      border-radius: 15px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .highlight-box:hover {
+      transform: translateY(-5px);
     }
     .testimonials, .hobbies {
       background-color: #1a1a1a;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-top: 2rem;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-top: 2.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     .testimonial-item {
-      margin-bottom: 1rem;
-      padding: 0.8rem;
-      border-left: 3px solid #f39c12;
+      margin-bottom: 1.5rem;
+      padding: 1.2rem;
+      border-left: 4px solid #f39c12;
+      background: rgba(243, 156, 18, 0.1);
+      border-radius: 8px;
     }
     .hobbies ul {
       list-style: square;
@@ -92,11 +123,17 @@
     footer {
       background-color: #1a1a1a;
       text-align: center;
-      padding: 2rem;
+      padding: 3rem;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
     }
     footer a {
       color: #f39c12;
       text-decoration: none;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #e67e22;
     }
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(-20px);}
@@ -109,7 +146,9 @@
     <div class="container">
       <h1>Khushi Jaiswal</h1>
       <p>Cloud Enthusiast & Full Stack Developer</p>
-      <a href="Khushi_Jaiswal_Resume.pdf" download class="btn">Download Resume</a>
+      <!-- Resume Download Link -->
+      <!-- Note: Place your resume PDF in the same directory as this HTML file and name it 'Khushi_Jaiswal_Resume.pdf' -->
+      <a href="./Khushi_Jaiswal_Resume.pdf" download class="btn">Download Resume</a>
     </div>
   </header>
 
